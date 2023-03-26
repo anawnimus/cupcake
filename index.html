@@ -276,11 +276,10 @@ svg {
 
 <script>
 
-
-document.getElementById("inputBox").addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    document.getElementById("buton").click();
-  }
+document.getElementById("inputBox").addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        document.getElementById("buton").click();
+    }
 });
 
 function bonas(msg) {
@@ -298,10 +297,20 @@ function checkInput() {
             window.location.href = "https://anawnimus.github.io/cupcake/angrycherry.html";
             bonas("*Speechless* 🫣")
             break;
-        
+
         case "chandransh" || "chandu":
             window.location.href = "https://www.chandransh.42web.io/"
             bonas("Damn 🫣")
+            break;
+
+        case "tesla":
+            bonas("Rewati di aka celebrity (one I love most)🫣❤‍🔥! Best sis ever in history!")
+            break;
+
+        case "ityadita":
+            bonas("ab nhi daalne dunga kuch")
+            document.getElementById("inputBox").remove();
+            document.getElementById("buton").remove();
             break;
 
         default:
