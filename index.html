@@ -275,16 +275,20 @@ svg {
 </body>
 
 <script>
+
+
 document.getElementById("inputBox").addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     document.getElementById("buton").click();
   }
 });
 
-function bonas() {
+function bonas(msg) {
     var heading = document.getElementById("heading");
-    heading.innerHTML = "Code worked 🗿";
+    heading.innerHTML = msg;
 }
+
+// Code worked 🗿
 
 function checkInput() {
     const input = document.getElementById("inputBox").value;
@@ -292,12 +296,12 @@ function checkInput() {
     switch (input.toLowerCase()) {
         case "ruhi":
             window.location.href = "https://anawnimus.github.io/cupcake/angrycherry.html";
-            bonas()
+            bonas("*Speechless* 🫣")
             break;
         
         case "chandransh" || "chandu":
             window.location.href = "https://www.chandransh.42web.io/"
-            bonas()
+            bonas("Damn 🫣")
             break;
 
         default:
